@@ -9,7 +9,7 @@ dashboardPage(
                p("Aplicacion para control de calidad y traduccion de datos para el RMRP 2022 Espanol al ingles", style="color: #fff; background-color: #672D53"),
                
                
-               column(8,shinydashboard::box(id="box_2", title = "Por favor, copiar y pegar los datos desde un archivo xls, en el mismo formato que el template que le haya sido entregado", solidHeader = T,collapsible = T,collapsed = F,
+               column(12,shinydashboard::box(id="box_2", title = "Por favor, copiar y pegar los datos desde un archivo xls, en el mismo formato que el template que le haya sido entregado", solidHeader = T,collapsible = T,collapsed = F,
                                             width = 12,status = "primary",
                                             
                                             
@@ -30,7 +30,7 @@ dashboardPage(
                ))),
                
                
-               fluidRow(column(1,shinydashboard::box(id="box_15", title = "Control", solidHeader = T,collapsible = T,collapsed = F,
+               fluidRow(column(12,shinydashboard::box(id="box_15", title = "Control", solidHeader = T,collapsible = T,collapsed = F,
                                                      width = 12,status = "primary",
                                                      tags$b("Imported data:"),
                                                      verbatimTextOutput(outputId = "status"),
